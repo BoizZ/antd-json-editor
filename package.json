@@ -25,6 +25,9 @@
   "homepage": "https://github.com/BoizZ/belle.json-editor#readme",
   "dependencies": {
     "antd": "^2.12.8",
+    "codemirror": "^5.29.0",
+    "codemirror-formatting": "^1.0.0",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
