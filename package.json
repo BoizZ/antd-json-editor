@@ -29,6 +29,14 @@
     "react-dom": "^15.6.1"
   },
   "devDependencies": {
-    "@storybook/react": "^3.2.8"
+    "@storybook/react": "^3.2.8",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.6.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
