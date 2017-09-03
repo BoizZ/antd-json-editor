@@ -4,7 +4,8 @@
   "description": "Visualize the JSON editor",
   "main": "index.js",
   "scripts": {
-    "test": "node test"
+    "test": "node test",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,8 @@
     "antd": "^2.12.8",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.2.8"
   }
 }
