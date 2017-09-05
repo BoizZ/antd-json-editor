@@ -8,17 +8,14 @@ import 'antd/dist/antd.css'
 import 'codemirror/lib/codemirror.css'
 
 class CodeEditor extends Component {
-  constructor (props) {
-    super(props)
-    this.show = this.show.bind(this)
-    this.state = {}
+  state = {
+    visible: false,
+    data: {}
   }
 
-  show (data) {
-    this.setState({
-      visible: true,
-      data
-    })
+  componentWillReceiveProps (nextProps) {
+    const { data, visible } = nextProps
+    this.setState({ data, visible })
   }
 
   hide = () => {
@@ -67,6 +64,8 @@ class CodeEditor extends Component {
 }
 
 CodeEditor.propTypes = {
+  data: PropTypes.obj,
+  visible: PropTypes.bool,
   onSave: PropTypes.func
 }
 
