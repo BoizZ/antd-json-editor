@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "node test",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "lint": "eslint components/**/*.js --cache",
+    "validate": "npm ls"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,10 @@
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.3.0",
-    "eslint-plugin-standard": "^3.0.1"
-  }
+    "eslint-plugin-standard": "^3.0.1",
+    "precommit-hook": "^3.0.0"
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
